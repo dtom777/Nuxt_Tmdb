@@ -1,4 +1,4 @@
-const { TMDB_API_KEY, API_URL } = process.env
+const { TMDB_API_KEY, API_URL,FIREBASE_API_KEY,FIREBASE_PROJECT_ID,FIREBASE_AUTH_DOMAIN,STORAGE_BUCKET,MESSAGING_SENDER_ID,FIREBASE_APP_ID } = process.env
 require("dotenv").config();
 
 import colors from 'vuetify/es5/util/colors'
@@ -95,7 +95,13 @@ export default {
   },
   publicRuntimeConfig: {
     apiUrl: API_URL,
-    tmdbApiKey: process.env.NODE_ENV !== 'development' ? TMDB_API_KEY : undefined,
+    tmdbApiKey: process.env.NODE_ENV !== 'production' ? TMDB_API_KEY : undefined,
+    projectId: FIREBASE_PROJECT_ID,
+    apiKey: FIREBASE_API_KEY,
+    authDomain: FIREBASE_AUTH_DOMAIN,
+    storageBucket: STORAGE_BUCKET,
+    messagingSenderId: MESSAGING_SENDER_ID,
+    appId: FIREBASE_APP_ID
   },
   privateRuntimeConfig: {
     tmdbApiKey: TMDB_API_KEY
