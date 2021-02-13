@@ -5,14 +5,14 @@ const webpack = require('webpack')
 
 export default {
   env: {
-    API_KEY: process.env.API_KEY,
-    API_URL: process.env.API_URL,
-    FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID,
-    FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
-    FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
-    STORAGE_BUCKET: process.env.STORAGE_BUCKET,
-    MESSAGING_SENDER_ID: process.env.MESSAGING_SENDER_ID,
-    FIREBASE_APP_ID: process.env.FIREBASE_APP_ID
+    API_KEY: process.env.API_KEY || '',
+    API_URL: process.env.API_URL || '',
+    FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID || '',
+    FIREBASE_API_KEY: process.env.FIREBASE_API_KEY || '',
+    FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN || '',
+    STORAGE_BUCKET: process.env.STORAGE_BUCKET || '',
+    MESSAGING_SENDER_ID: process.env.MESSAGING_SENDER_ID || '',
+    FIREBASE_APP_ID: process.env.FIREBASE_APP_ID || ''
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
