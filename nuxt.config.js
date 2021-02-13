@@ -1,18 +1,18 @@
-const { API_KEY, API_URL } = process.env
+const { API_KEY, API_URL, FIREBASE_PROJECT_ID, FIREBASE_API_KEY, FIREBASE_AUTH_DOMAIN, STORAGE_BUCKET, MESSAGING_SENDER_ID, FIREBASE_APP_ID } = process.env
 
 import colors from 'vuetify/es5/util/colors'
 const webpack = require('webpack')
 
 export default {
   env: {
-    apiKey: process.env.API_KEY || '',
-    apiUrl: process.env.API_URL || '',
-    firebaseProjectId: process.env.FIREBASE_PROJECT_ID || '',
-    firebaseApiKey: process.env.FIREBASE_API_KEY || '',
-    firebaseAuthDomain: process.env.FIREBASE_AUTH_DOMAIN || '',
-    storageBucket: process.env.STORAGE_BUCKET || '',
-    messageingSenderId: process.env.MESSAGING_SENDER_ID || '',
-    firebaseAppId: process.env.FIREBASE_APP_ID || '',
+    API_KEY,
+    API_URL,
+    FIREBASE_PROJECT_ID,
+    FIREBASE_API_KEY,
+    FIREBASE_AUTH_DOMAIN,
+    STORAGE_BUCKET,
+    MESSAGING_SENDER_ID,
+    FIREBASE_APP_ID
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
