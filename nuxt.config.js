@@ -95,7 +95,7 @@ export default {
   },
   publicRuntimeConfig: {
     apiUrl: API_URL,
-    tmdbApiKey: process.env.NODE_ENV !== 'development' ? TMDB_API_KEY : undefined,
+    tmdbApiKey: process.env.NODE_ENV !== 'production' ? TMDB_API_KEY : undefined,
   },
   privateRuntimeConfig: {
     tmdbApiKey: TMDB_API_KEY
