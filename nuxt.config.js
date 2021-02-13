@@ -6,14 +6,14 @@ const webpack = require('webpack')
 
 export default {
   env: {
-    tmdbApiKey: process.env.TMBD_API_KEY || '',
-    apiUrl: process.env.API_URL || '',
-    projectId: process.env.FIREBASE_PROJECT_ID || '',
-    apiKey: process.env.FIREBASE_API_KEY || '',
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN || '',
-    storageBucket: process.env.STORAGE_BUCKET || '',
-    messagingSenderId: process.env.MESSAGING_SENDER_ID || '',
-    appId: process.env.FIREBASE_APP_ID || ''
+    tmdbApiKey: process.env.TMDB_API_KEY,
+    apiUrl: process.env.API_URL,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
