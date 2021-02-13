@@ -1,11 +1,12 @@
-const { API_KEY, API_URL } = process.env
+const { TMDB_API_KEY, API_URL } = process.env
+require("dotenv").config();
 
 import colors from 'vuetify/es5/util/colors'
 const webpack = require('webpack')
 
 export default {
   env: {
-    apiKey: process.env.API_KEY || '',
+    tmdbApiKey: process.env.TMBD_API_KEY || '',
     apiUrl: process.env.API_URL || '',
     projectId: process.env.FIREBASE_PROJECT_ID || '',
     apiKey: process.env.FIREBASE_API_KEY || '',
@@ -94,9 +95,9 @@ export default {
   },
   publicRuntimeConfig: {
     apiUrl: API_URL,
-    apiKey: process.env.NODE_ENV !== 'production' ? API_KEY : undefined,
+    tmdbApiKey: process.env.NODE_ENV !== 'production' ? TMDB_API_KEY : undefined,
   },
   privateRuntimeConfig: {
-    apiKey: API_KEY
+    tmdbApiKey: TMDB_API_KEY
   },
 }

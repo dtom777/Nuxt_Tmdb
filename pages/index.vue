@@ -25,7 +25,7 @@
 export default {
   async asyncData({$axios, $config }) {
     const { results } = await $axios.$get(
-      `${$config.apiUrl}/movie/now_playing?api_key=${$config.apiKey}`
+      `${$config.apiUrl}/movie/now_playing?api_key=${$config.tmdbApiKey}`
       )
       return { results }
   },

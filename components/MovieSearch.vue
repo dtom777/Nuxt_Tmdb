@@ -37,7 +37,7 @@ export default {
     return {
       query: '',
       movies: [],
-      apiKey: process.env.API_KEY
+      apiKey: process.env.TMDB_API_KEY
     }
   },
   methods: {

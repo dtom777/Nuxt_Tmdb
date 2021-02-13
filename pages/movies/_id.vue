@@ -133,8 +133,8 @@ export default {
     }
   },
   async asyncData({ $axios, $config, params }) {
-    const movie = await $axios.$get(`${$config.apiUrl}/movie/${params.id}?api_key=${$config.apiKey}`)
-    const credits = await $axios.$get(`${$config.apiUrl}/movie/${params.id}/credits?api_key=${$config.apiKey}`)
+    const movie = await $axios.$get(`${$config.apiUrl}/movie/${params.id}?api_key=${$config.tmdbApiKey}`)
+    const credits = await $axios.$get(`${$config.apiUrl}/movie/${params.id}/credits?api_key=${$config.tmdbApiKey}`)
       return { movie, genres: movie.genres.map(obj => obj.name), credits: credits.cast.map(obj => obj.name)}
   },
   methods: {
