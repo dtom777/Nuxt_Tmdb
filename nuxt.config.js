@@ -6,14 +6,14 @@ const webpack = require('webpack')
 
 export default {
   env: {
-    tmdbApiKey: process.env.TMDB_API_KEY,
-    apiUrl: process.env.API_URL,
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID,
-    appId: process.env.FIREBASE_APP_ID
+    TMDB_API_KEY,
+    API_URL,
+    FIREBASE_PROJECT_ID,
+    FIREBASE_API_KEY,
+    FIREBASE_AUTH_DOMAIN,
+    STORAGE_BUCKET,
+    MESSAGING_SENDER_ID,
+    FIREBASE_APP_ID
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
@@ -96,12 +96,6 @@ export default {
   publicRuntimeConfig: {
     apiUrl: API_URL,
     tmdbApiKey: process.env.NODE_ENV !== 'production' ? TMDB_API_KEY : undefined,
-    projectId: FIREBASE_PROJECT_ID,
-    apiKey: FIREBASE_API_KEY,
-    authDomain: FIREBASE_AUTH_DOMAIN,
-    storageBucket: STORAGE_BUCKET,
-    messagingSenderId: MESSAGING_SENDER_ID,
-    appId: FIREBASE_APP_ID
   },
   privateRuntimeConfig: {
     tmdbApiKey: TMDB_API_KEY
