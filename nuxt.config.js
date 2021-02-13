@@ -4,6 +4,16 @@ import colors from 'vuetify/es5/util/colors'
 const webpack = require('webpack')
 
 export default {
+  env: {
+    apiKey: process.env.API_KEY || '',
+    apiUrl: process.env.API_URL || '',
+    firebaseProjectId: process.env.FIREBASE_PROJECT_ID || '',
+    firebaseApiKey: process.env.FIREBASE_API_KEY || '',
+    firebaseAuthDomain: process.env.FIREBASE_AUTH_DOMAIN || '',
+    storageBucket: process.env.STORAGE_BUCKET || '',
+    messageingSenderId: process.env.MESSAGING_SENDER_ID || '',
+    firebaseAppId: process.env.FIREBASE_APP_ID || '',
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
 
