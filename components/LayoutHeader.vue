@@ -69,7 +69,9 @@
       fixed
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" :class="iconMenu" />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer">
+        <v-icon>{{ iconMenu }}</v-icon>
+      </v-app-bar-nav-icon>
       <v-toolbar-title v-text="title" />
       <v-spacer></v-spacer>
       <v-btn color="red" @click="logout" v-if="$store.state.login_user">Logout</v-btn>

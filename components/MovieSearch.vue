@@ -5,7 +5,7 @@
         type="text"
         v-model="query"
         placeholder="Serach Movies"
-        prepend-inner-icon="mdi-magnify"
+        :prepend-inner-icon="iconMagnify"
         @keyup="SearchMovie"
         clearable
         class="mt-4"
@@ -32,12 +32,14 @@
 </template>
 
 <script>
+import { mdiMagnify } from '@mdi/js'
 export default {
   data() {
     return {
       query: '',
       movies: [],
-      apiKey: process.env.TMDB_API_KEY
+      apiKey: process.env.TMDB_API_KEY,
+      iconMagnify: mdiMagnify
     }
   },
   methods: {

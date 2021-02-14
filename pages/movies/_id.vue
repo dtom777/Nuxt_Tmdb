@@ -21,10 +21,13 @@
           <div>
             <v-chip outlined label class="font-weight-bold" :small='$vuetify.breakpoint.xsOnly'>Popularity</v-chip>
             <v-rating
+              :empty-icon="iconStarOutline"
+              :full-icon="iconStar"
+              :half-icon="iconStarHalf"
               :value="movie.vote_average/2"
               length="5"
               readonly
-              size="20"
+              size="35"
               color="orange"
               class="d-inline"
               :class='{ "px-0": $vuetify.breakpoint.xsOnly }'
@@ -52,7 +55,7 @@
               <v-text-field
                 v-model="date"
                 label="Watched date"
-                prepend-inner-icon="mdi-calendar"
+                :prepend-inner-icon="iconCalendar"
                 readonly
                 v-bind="attrs"
                 v-on="on"
@@ -70,12 +73,12 @@
             v-model="who"
             :items="items"
             label="Who do you recommend to?"
-            prepend-inner-icon="mdi-emoticon-kiss"
+            :prepend-inner-icon="iconKiss"
           ></v-select>
           <v-textarea
             v-model="good"
             outlined
-            prepend-inner-icon="mdi-hand-okay"
+            :prepend-inner-icon="iconHandOkay"
             label="Good thing"
             hide-details="auto"
             class="mt-4"
@@ -84,7 +87,7 @@
           <v-textarea
             v-model="bad"
             outlined
-            prepend-inner-icon="mdi-hand-left"
+            :prepend-inner-icon="iconHandLeft"
             label="Bad thing"
             hide-details="auto"
             class="mt-4"
@@ -100,7 +103,8 @@
   </v-container>
 </template>
 
-<script async>
+<script>
+import { mdiCalendar, mdiEmoticonKiss, mdiHandOkay, mdiHandLeft, mdiStarOutline, mdiStar, mdiStarHalfFull} from '@mdi/js'
 // import axios from 'axios'
 // import { mapGetters } from 'vuex'
 
@@ -117,6 +121,13 @@ export default {
   },
   data() {
     return {
+      iconCalendar: mdiCalendar,
+      iconKiss: mdiEmoticonKiss,
+      iconHandOkay: mdiHandOkay,
+      iconHandLeft: mdiHandLeft,
+      iconStarOutline: mdiStarOutline,
+      iconStar: mdiStar,
+      iconStarHalf: mdiStarHalfFull,
       value: 5,
       menu: false,
       date: null,

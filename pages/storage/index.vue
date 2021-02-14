@@ -19,8 +19,8 @@
                   class="rounded"
                 ></v-img>
                 <div :class='{"d-flex justify-space-between": $vuetify.breakpoint.smAndUp}'>
-                  <v-btn :href="'/movies/' + movie.movieId + '/'" class="blue" :width="$vuetify.breakpoint.smAndUp ? '50%': '100%'"  :small='$vuetify.breakpoint.xsOnly'><v-icon>mdi-pencil</v-icon>Edit</v-btn>
-                  <v-btn @click="remove(movie.id)" class="red" :width="$vuetify.breakpoint.smAndUp ? '50%': '100%'" :small='$vuetify.breakpoint.xsOnly'><v-icon>mdi-delete</v-icon>delete</v-btn>
+                  <v-btn :href="'/movies/' + movie.movieId + '/'" class="blue" :width="$vuetify.breakpoint.smAndUp ? '50%': '100%'"  :small='$vuetify.breakpoint.xsOnly'><v-icon>{{ iconPencil }}</v-icon>Edit</v-btn>
+                  <v-btn @click="remove(movie.id)" class="red" :width="$vuetify.breakpoint.smAndUp ? '50%': '100%'" :small='$vuetify.breakpoint.xsOnly'><v-icon>{{ iconDelete }}</v-icon>delete</v-btn>
                 </div>
               </v-card>
             </v-col>
@@ -30,21 +30,21 @@
                   v-model="movie.title"
                   label="Title"
                   readonly
-                  prepend-inner-icon="mdi-movie"
+                  :prepend-inner-icon="iconMovie"
                   outlined
                 ></v-text-field>
                 <v-text-field
                   v-model="movie.date"
                   label="Watched date"
                   readonly
-                  prepend-inner-icon="mdi-calendar"
+                  :prepend-inner-icon="iconCalendar"
                   outlined
                 ></v-text-field>
                 <v-text-field
                   v-model="movie.who"
                   label="Recommend for"
                   readonly
-                  prepend-inner-icon="mdi-emoticon-kiss"
+                  :prepend-inner-icon="iconKiss"
                   outlined
                 ></v-text-field>
                 <div :hidden='$vuetify.breakpoint.smAndUp'>
@@ -52,7 +52,7 @@
                     v-model="movie.good"
                     label="Good thing"
                     readonly
-                    prepend-inner-icon="mdi-hand-okay"
+                    :prepend-inner-icon="iconHandOkay"
                     outlined
                     rows="2"
                   ></v-textarea>
@@ -60,7 +60,7 @@
                     v-model="movie.bad"
                     label="Bad thing"
                     readonly
-                    prepend-inner-icon="mdi-hand-left"
+                    :prepend-inner-icon="iconHandLeft"
                     outlined
                     rows="2"
                   ></v-textarea>
@@ -87,7 +87,7 @@
             </v-col>
           </li>
         </ul>
-        <v-pagination :length="length" v-model="page" @input="onchange"></v-pagination>
+        <v-pagination :length="length" v-model="page" @input="onchange" :prev-icon="iconMenuLeft" :next-icon="iconMenuRight"></v-pagination>
       </v-col>
     </v-row>
   </v-container>
@@ -95,6 +95,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import { mdiPencil, mdiDelete, mdiMovie, mdiCalendar, mdiEmoticonKiss, mdiHandOkay, mdiHandLeft, mdiMenuLeft, mdiMenuRight } from '@mdi/js'
 
 export default {
   head() {
@@ -104,6 +105,15 @@ export default {
   },
   data() {
     return {
+      iconPencil: mdiPencil,
+      iconDelete: mdiDelete,
+      iconMovie: mdiMovie,
+      iconCalendar: mdiCalendar,
+      iconKiss: mdiEmoticonKiss,
+      iconHandOkay: mdiHandOkay,
+      iconHandLeft: mdiHandLeft,
+      iconMenuLeft: mdiMenuLeft,
+      iconMenuRight: mdiMenuRight,
       movie: '',
       page: 1,
       length:0,
