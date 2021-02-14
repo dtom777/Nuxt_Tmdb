@@ -20,7 +20,7 @@
   </v-container>
 </template>
 
-<script>
+<script defer>
 export default {
   props:{
     title: {

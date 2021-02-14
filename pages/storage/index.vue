@@ -93,7 +93,7 @@
   </v-container>
 </template>
 
-<script>
+<script defer>
 import { mapGetters } from 'vuex'
 
 export default {

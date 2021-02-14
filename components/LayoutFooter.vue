@@ -6,5 +6,3 @@
     <span>&copy; {{ new Date().getFullYear() }} Nuxt × TMDB</span>
   </v-footer>
 </template>
-
-<script></script>

@@ -100,7 +100,7 @@
   </v-container>
 </template>
 
-<script>
+<script defer>
 // import axios from 'axios'
 // import { mapGetters } from 'vuex'
 
