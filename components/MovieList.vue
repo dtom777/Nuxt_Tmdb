@@ -20,7 +20,7 @@
   </v-container>
 </template>
 
-<script defer>
+<script>
 export default {
   props:{
     title: {
@@ -53,7 +53,8 @@ export default {
 </script>
 
 <style>
-* {
+*{text-decoration:none}
+/* * {
   text-decoration: none;
-}
+} */
 </style>

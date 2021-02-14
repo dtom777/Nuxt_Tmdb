@@ -93,7 +93,7 @@
   </v-container>
 </template>
 
-<script defer>
+<script>
 import { mapGetters } from 'vuex'
 
 export default {
@@ -134,7 +134,8 @@ export default {
 </script>
 
 <style scoped>
-li {
+li{list-style:none}@media screen and (max-width: 600px){.v-text-field{height:65px;font-size:12px}.v-textarea{height:73px}}
+/* li {
   list-style: none;
 }
 @media screen and (max-width: 600px) {
@@ -145,5 +146,5 @@ li {
   .v-textarea {
     height: 73px;
   }
-}
+} */
 </style>>

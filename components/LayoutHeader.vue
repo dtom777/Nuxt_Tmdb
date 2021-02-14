@@ -78,7 +78,7 @@
   </div>
 </template>
 
-<script defer>
+<script>
 import firebase from 'firebase'
 import { mapActions,mapGetters } from 'vuex'
 
