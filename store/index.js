@@ -1,3 +1,4 @@
+import orderBy from 'lodash/orderBy'
 import firebase from '~/plugins/firebase'
 import { vuexfireMutations, firestoreAction } from 'vuexfire'
 
@@ -27,7 +28,7 @@ export const getters = {
   getRangeByPage: state => {
     return page => {
       const SIZE = 3
-      return _.orderBy(state.movies, 'created', 'desc').slice((page - 1) * SIZE, (page - 1) * SIZE + SIZE)
+      return orderBy(state.movies, 'created', 'desc').slice((page - 1) * SIZE, (page - 1) * SIZE + SIZE)
     }
   },
   userName: state => state.login_user ? state.login_user.displayName : '',

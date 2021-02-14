@@ -2,7 +2,7 @@ const { TMDB_API_KEY, API_URL,FIREBASE_API_KEY,FIREBASE_PROJECT_ID,FIREBASE_AUTH
 require("dotenv").config();
 
 import colors from 'vuetify/es5/util/colors'
-const webpack = require('webpack')
+// const webpack = require('webpack')
 
 export default {
   env: {
@@ -61,6 +61,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
+    ['@nuxtjs/pwa', { icon: false }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -87,11 +88,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    plugins: [
-      new webpack.ProvidePlugin({
-        '_': 'lodash'
-      })
-    ],
+    // plugins: [
+    //   new webpack.ProvidePlugin({
+    //     '_': 'lodash'
+    //   })
+    // ],
+    vendor: ['lodash'],
   },
   publicRuntimeConfig: {
     apiUrl: API_URL,
