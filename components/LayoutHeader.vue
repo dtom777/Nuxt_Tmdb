@@ -69,7 +69,7 @@
       fixed
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" :class="iconMenu" />
       <v-toolbar-title v-text="title" />
       <v-spacer></v-spacer>
       <v-btn color="red" @click="logout" v-if="$store.state.login_user">Logout</v-btn>
@@ -81,21 +81,23 @@
 <script>
 import firebase from 'firebase'
 import { mapActions,mapGetters } from 'vuex'
+import { mdiHome, mdiMovie, mdiWardrobe, mdiMenu } from '@mdi/js'
 
 export default {
   data () {
     return {
+      iconMenu: mdiMenu,
       clipped: false,
       drawer: false,
       nav_lists:[
         {
           name: 'Home',
-          icon: 'mdi-home',
+          icon: mdiHome,
           link: '/'
         },
         {
           name: 'Movie',
-          icon: 'mdi-movie',
+          icon: mdiMovie,
           link: '',
           active: false,
           lists:[
@@ -112,7 +114,7 @@ export default {
         },
         {
           name: 'Storage',
-          icon: 'mdi-wardrobe',
+          icon: mdiWardrobe,
           link: '/storage'
         },
       ],
