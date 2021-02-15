@@ -104,7 +104,7 @@
   </v-container>
 </template>
 
-<script>
+<script defer>
 import { mdiCalendar, mdiEmoticonKiss, mdiHandOkay, mdiHandLeft, mdiStarOutline, mdiStar, mdiStarHalfFull} from '@mdi/js'
 // import axios from 'axios'
 // import { mapGetters } from 'vuex'

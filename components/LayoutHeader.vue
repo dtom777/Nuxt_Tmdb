@@ -80,7 +80,7 @@
   </div>
 </template>
 
-<script>
+<script defer>
 import firebase from 'firebase'
 import { mapActions,mapGetters } from 'vuex'
 import { mdiHome, mdiMovie, mdiWardrobe, mdiMenu } from '@mdi/js'
