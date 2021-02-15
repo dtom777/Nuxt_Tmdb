@@ -74,8 +74,8 @@
       </v-app-bar-nav-icon>
       <v-toolbar-title v-text="title" />
       <v-spacer></v-spacer>
-      <v-btn color="red" @click="logout" v-if="$store.state.login_user" aria-label="Logout">Logout</v-btn>
-      <v-btn color="info" @click="login" v-else aria-label="Login">Login</v-btn>
+      <v-btn color="red" @click="logout" v-if="$store.state.login_user" aria-label="Logout">LOGOUT</v-btn>
+      <v-btn color="info" @click="login" v-else aria-label="Login">LOGIN</v-btn>
     </v-app-bar>
   </div>
 </template>
