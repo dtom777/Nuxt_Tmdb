@@ -35,7 +35,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href:"https://fonts.googleapis.com/css2?family=Roboto&display=swap"}
+      // { rel: 'stylesheet', href:"https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"}
     ]
   },
 
@@ -62,8 +62,14 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
-    ['@nuxtjs/pwa', { icon: false }]
+    ['@nuxtjs/pwa', { icon: false }],
+    'nuxt-webfontloader'
   ],
+  webfontloader: {
+    google: {
+      families: ['Roboto:400']
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
@@ -83,9 +89,9 @@ export default {
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          // warning: colors.amber.base,
+          // error: colors.deepOrange.accent4,
+          // success: colors.green.accent3
         }
       }
     }

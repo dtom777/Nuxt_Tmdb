@@ -17,6 +17,7 @@
     "lodash": "^4.17.20",
     "lodash.orderby": "^4.6.0",
     "nuxt": "^2.14.12",
+    "nuxt-webfontloader": "^1.1.0",
     "vuexfire": "^3.0.1"
   },
   "devDependencies": {
