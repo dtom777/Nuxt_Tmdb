@@ -95,8 +95,8 @@
             rows="3"
           ></v-textarea>
           <div class="d-flex justify-center">
-            <v-btn @click="add" class="mt-4 py-4 mr-4" color="blue">Save</v-btn>
-            <v-btn @click="reset" class="mt-4 py-4" outlined>Clear</v-btn>
+            <v-btn @click="add" class="mt-4 py-4 mr-4" color="blue" aria-label="Save">Save</v-btn>
+            <v-btn @click="reset" class="mt-4 py-4" outlined aria-label="Clear">Clear</v-btn>
           </div>
         </v-form>
       </v-col>
