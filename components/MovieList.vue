@@ -20,7 +20,7 @@
   </v-container>
 </template>
 
-<script>
+<script async>
 export default {
   props:{
     title: {
