@@ -34,7 +34,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href:"https://fonts.googleapis.com/css2?family=Roboto&display=swap"}
     ]
   },
 
@@ -70,9 +71,7 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    defaultAssets: {
-      icons: false
-    },
+    defaultAssets: false,
     theme: {
       dark: true,
       themes: {

@@ -2,7 +2,8 @@
   <v-container fluid>
     <v-row>
       <v-col align-self="center" cols=12 sm=8>
-          <h1 class="font-weight-bold">{{ movie.title }}</h1>
+          <!-- <h1 class="font-weight-bold">{{ movie.title }}</h1> -->
+          <h2 class="font-weight-bold">{{ movie.title }}</h2>
           <h3 class="subtitle-1 font-weight-light font-italic" v-show="movie.tagline">〜{{ movie.tagline }}〜</h3>
           <p class="body-2">{{ movie.overview }}</p>
           <p class="font-weight-light">
