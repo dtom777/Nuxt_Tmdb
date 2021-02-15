@@ -93,7 +93,7 @@
   </v-container>
 </template>
 
-<script defer>
+<script>
 import { mapGetters } from 'vuex'
 import { mdiPencil, mdiDelete, mdiMovie, mdiCalendar, mdiEmoticonKiss, mdiHandOkay, mdiHandLeft, mdiMenuLeft, mdiMenuRight } from '@mdi/js'
 

@@ -21,7 +21,7 @@
   </v-container>
 </template>
 
-<script defer>
+<script>
 export default {
   async asyncData({$axios, $config }) {
     const { results } = await $axios.$get(
