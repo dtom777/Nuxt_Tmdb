@@ -1,4 +1,4 @@
-# Nuxt_movie_storage
+# Nuxt_Tmdb
 
 ## Build Setup
 
