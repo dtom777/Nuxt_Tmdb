@@ -1,6 +1,6 @@
 # Nuxt_Tmdb（SSR）
 
-**使用技術：
+使用技術：
 Nuxt.js ^2.14.12
 Vuex
 Vuexfire ^3.0.1
