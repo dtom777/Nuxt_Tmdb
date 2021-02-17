@@ -1,6 +1,6 @@
 # Nuxt_Tmdb（SSR）
 
-使用技術：  
+## 使用技術：  
 Nuxt.js ^2.14.12  
 Vuex  
 Vuexfire ^3.0.1  
@@ -11,12 +11,12 @@ firestore
 （firebase ^7.19.1）  
 The Movie Database API  
 
-こだわった点：  
+## こだわった点：  
 ・映画の検索はキーアップごとに反応するようにし、動きを感じれるようにしたこと。  
 ・レスポンシブ対応していること。  
 ・vuex,vuexfireを使用し、値のやりとりをわかりやすくしたこと。  
 
-苦労した点  
+## 苦労した点  
 ・firestoreについて、userごとのデータを保存する階層構造を実装方法の理解が難しかったこと。  
 ・LightHouseについて、Performanceを向上させる方法の思案。  
 
