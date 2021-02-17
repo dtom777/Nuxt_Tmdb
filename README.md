@@ -1,5 +1,7 @@
 # Nuxt_Tmdb（SSR）
 
+deployed on https://nuxt-tmdb-firebase.herokuapp.com/
+
 ## 使用技術：  
 Nuxt.js ^2.14.12  
 Vuex  
