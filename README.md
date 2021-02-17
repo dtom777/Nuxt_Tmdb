@@ -1,8 +1,8 @@
 # Nuxt_Tmdb（SSR）
 
 使用技術：
-①Nuxt.js ^2.14.12
-②Vuex
+  ①Nuxt.js ^2.14.12
+  ②Vuex
 ③Vuexfire ^3.0.1
 ④vuetify ^1.11.3
 ⑤Ajax
