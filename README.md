@@ -1,24 +1,24 @@
 # Nuxt_Tmdb（SSR）
 
 使用技術：  
-①Nuxt.js ^2.14.12  
-②Vuex  
-③Vuexfire ^3.0.1  
-④vuetify ^1.11.3  
-⑤Ajax  
-⑦firebaseAuth  
-⑧firestore  
+Nuxt.js ^2.14.12  
+Vuex  
+Vuexfire ^3.0.1  
+vuetify ^1.11.3  
+Ajax  
+firebaseAuth  
+firestore  
 （firebase ^7.19.1）  
-⑨The Movie Database API  
+The Movie Database API  
 
-こだわった点：
-①映画の検索はキーアップごとに反応するようにし、動きを感じれるようにしたこと。
-②レスポンシブ対応していること。
-③vuex,vuexfireを使用し、値のやりとりをわかりやすくしたこと。
+こだわった点：  
+・映画の検索はキーアップごとに反応するようにし、動きを感じれるようにしたこと。  
+・レスポンシブ対応していること。  
+・vuex,vuexfireを使用し、値のやりとりをわかりやすくしたこと。  
 
-苦労した点
-①firestoreについて、userごとのデータを保存する階層構造を実装方法の理解が難しかったこと。
-②LightHouseについて、Performanceを向上させる方法の思案。
+苦労した点  
+・firestoreについて、userごとのデータを保存する階層構造を実装方法の理解が難しかったこと。  
+・LightHouseについて、Performanceを向上させる方法の思案。  
 
 
 ## Build Setup
