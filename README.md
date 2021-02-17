@@ -6,7 +6,7 @@ deployed on https://nuxt-tmdb-firebase.herokuapp.com/
 Nuxt.js ^2.14.12  
 Vuex  
 Vuexfire ^3.0.1  
-vuetify ^1.11.3  
+Vuetify ^1.11.3  
 Ajax  
 firebaseAuth  
 firestore  
