@@ -1,15 +1,15 @@
 # Nuxt_Tmdb（SSR）
 
-使用技術：
-  ①Nuxt.js ^2.14.12
-  ②Vuex
-③Vuexfire ^3.0.1
-④vuetify ^1.11.3
-⑤Ajax
-⑦firebaseAuth
-⑧firestore
-（firebase ^7.19.1）
-⑨The Movie Database API
+使用技術：  
+①Nuxt.js ^2.14.12  
+②Vuex  
+③Vuexfire ^3.0.1  
+④vuetify ^1.11.3  
+⑤Ajax  
+⑦firebaseAuth  
+⑧firestore  
+（firebase ^7.19.1）  
+⑨The Movie Database API  
 
 こだわった点：
 ①映画の検索はキーアップごとに反応するようにし、動きを感じれるようにしたこと。
