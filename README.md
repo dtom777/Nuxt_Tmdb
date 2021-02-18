@@ -14,13 +14,13 @@ firestore
 The Movie Database API  
 
 ## こだわった点    
-・映画の検索はキーアップごとに反応するようにし、動きを感じれるようにしたこと。  
 ・レスポンシブ対応していること。  
 ・vuex,vuexfireを使用し、値のやりとりをわかりやすくしたこと。  
+.動的サイトにしたかったため、SSRを使用し、Herokuでデプロイしたこと。
 
 ## 苦労した点  
 ・firestoreについて、userごとのデータを保存する階層構造を実装方法の理解が難しかったこと。  
-・LightHouseについて、Performanceを向上させる方法の思案。  
+・LightHouseについて、Performanceを向上させる方法の思案が難しかったこと。  
 
 
 ## Build Setup
