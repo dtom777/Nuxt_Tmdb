@@ -7,7 +7,7 @@
       </v-col>
       <v-col v-for="movie in results" :key="movie.id" cols=6 sm=3>
         <v-card>
-          <a :href="'/movies/' + movie.id + '/'">
+          <a rel="preload" :href="'/movies/' + movie.id + '/'">
             <v-img
               :src="`https://image.tmdb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`"
               class="rounded"
