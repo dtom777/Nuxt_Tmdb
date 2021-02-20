@@ -17,7 +17,7 @@
           <v-list-item-avatar tile width="41" height="63">
             <v-img
               v-if="movie.poster_path"
-              :src="`http://image.tmdb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`"
+              :src="`https://image.tmdb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`"
               class="rounded"
             ></v-img>
           </v-list-item-avatar>
