@@ -12,7 +12,8 @@ Ajax
 firebaseAuth  
 firestore  
 （firebase ^7.19.1）  
-The Movie Database API
+The Movie Database API  
+Heroku
 
 ## こだわった点
 
