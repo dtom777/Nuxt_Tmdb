@@ -38,7 +38,7 @@
       </v-col>
       <v-col cols=12 sm=4>
         <v-img
-          :src="`http://image.tmdb.org/t/p/original/${movie.poster_path}`"
+          :src="`https://image.tmdb.org/t/p/original/${movie.poster_path}`"
           class="rounded"
         ></v-img>
       </v-col>

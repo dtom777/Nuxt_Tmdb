@@ -14,7 +14,7 @@
             <v-col cols=6 sm=4>
               <v-card>
                 <v-img
-                  :src="`http://image.tmdb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`"
+                  :src="`https://image.tmdb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`"
                   max-width=""
                   class="rounded"
                 ></v-img>
